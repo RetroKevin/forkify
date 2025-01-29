@@ -122,6 +122,10 @@ const controlAddRecipe = async function (newRecipe) {
   //Upload new recipe data
 }
 
+const gitTest = function () {
+  console.log('This is a GIT test')
+}
+
 const init = function () {
   bookmarksView.addHandlerRender(controlBookmarks)
   recipeView.addHandlerRender(controlRecipes)
@@ -130,5 +134,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults)
   paginationView.addHandlerClick(controlPagination)
   addRecipeView.addHandlerUpload(controlAddRecipe)
+  gitTest()
 }
 init()
