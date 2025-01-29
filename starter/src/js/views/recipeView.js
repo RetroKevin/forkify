@@ -1,6 +1,8 @@
 import icons from 'url:../../img/icons.svg'
 import { Fraction } from 'fractional'
 import View from './View'
+import { numberToFraction } from '../helpers.js'
+ele.quantity ? numberToFraction(ele.quantity).toString() : ''
 
 class RecipeView extends View {
   _parentElement = document.querySelector('.recipe')
